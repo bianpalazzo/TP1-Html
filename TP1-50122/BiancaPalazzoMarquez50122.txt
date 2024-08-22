@@ -1,0 +1,322 @@
+# TP1 - Desarrollo de Software
+
+Este repositorio contiene el código HTML y CSS para el Trabajo Práctico 1 de Desarrollo de Software.
+
+## Descripción
+
+El proyecto consiste en una página web estructurada con HTML y estilizada con CSS. La página incluye varias secciones que demuestran diferentes aspectos del desarrollo front-end, como la estructura básica del documento HTML, encabezados y propiedades del texto, divisiones y agrupación de contenido, enlaces y listas, elementos multimedia, tablas, formularios y semántica.
+
+## Características
+
+- **Estructura Básica del Documento HTML**: Incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.
+- **Encabezados y Propiedades del Texto**: Demuestra el uso de diferentes propiedades de texto como negrita, cursiva, subrayado y colores.
+- **Divisiones y Agrupación de Contenido**: Muestra cómo agrupar contenido en secciones y divisiones.
+- **Enlaces y Listas**: Incluye enlaces internos y externos, así como listas ordenadas y desordenadas.
+- **Elementos Multimedia**: Muestra cómo insertar imágenes, videos y audios.
+- **Tablas**: Ejemplifica el uso de tablas con encabezados, cuerpo y pie de tabla.
+- **Formularios**: Incluye un formulario básico con campos de entrada y un botón de envío.
+- **Semántica**: Utiliza elementos semánticos como `<aside>` y `<nav>` para mejorar la accesibilidad y la estructura del contenido.
+
+## Ejecución
+
+Para ejecutar este proyecto, sigue estos pasos:
+
+1. **Clona el Repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TP1 - Desarrollo de Software</title>
+<!--  se establece el estilo interno -->
+    <style> 
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer{
+            background-color: rgb(236, 119, 119);
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+        main{ 
+            padding: 10px;
+        }
+        section{
+            margin-bottom: 30px;
+            border: 1px solid rgb(241, 111, 111);
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+<!-- se crea una cabecera -->
+  <header>
+    <h1> Trabajo Práctico 1: Front End - HTML</h1>
+  </header>
+  <main>
+
+
+<div id="seccion1"> 
+    <section>
+        <h2>1. Estructura Básica del Documento HTML</h2>
+        <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+    </section>
+</div>
+
+<!-- se muestran distintos tipos y estilos de texto -->
+<div id="seccion2"> 
+</section>
+    <article>
+        <h2> 2. Encabezados y Propiedades del Texto</h2>
+        <h3>Se puede experimentar con distintas propiedades de texto</h3>
+                
+        <h3 style="font-weight: normal;">Estos son algunos ejemplos:</h3>
+            
+            
+            <h4><b>Esto es texto en negrita</b></h4>  
+                <p style="font-weight: bold;">Esto es texto en negrita con Style</p>
+            
+            
+                <h5><em> Esto es texto en cursiva</em></h5>
+                <p style="font-style: italic;"> Esto es texto en cursiva con Style </p>
+                <p style="text-decoration: underline;"> Esto es exto subrayado con Style.</p>
+            
+                    <h6 style="color: #ef3d3d;"><u> Esto es otro tipo de subrayado </u></h6>
+                        <p style="color: rgb(247, 28, 134);"> Esto es texto en color usando Style.</p>
+                        <p><mark> Esto es texto resaltado</mark></p>
+        </article>
+    </section>
+</div>
+
+<!-- se muestran distintas herramientas para distribuir el contenido -->
+<div id="seccion3"> 
+    <section> 
+        <article>
+            <h2>3. Divisiones y Agrupación de Contenido</h2>
+            
+                <h4><b>Sección 1</b></h4>
+                <p>Contenido de la primera división agrupada en un <code>&lt;div&gt;</code>.</p>
+                <h4><b>Sección 2</b></h4>
+                <p>Contenido de la segunda división agrupada en un <code>&lt;div&gt;</code>.</p>
+            
+            </section>
+        </article>
+    </div>
+
+<!-- creación de enlances -->
+    <div id="seccion4"> 
+    </section> 
+        <h2>4. Enlaces y Listas</h2>
+<!-- enlaces a distintas secciones de esta misma pagina -->
+        <h4>Enlaces Internos:</h4>
+        <ol>
+            <li><a href="#seccion1">Inicio </a></li>
+            <li><a href="#seccion2">Encabezados </a></li>
+            <li><a href="#seccion3">Divisiones y Agrupación </a></li>
+            <li><a href="#seccion4">Enlaces y Listas</a></li>
+            <li><a href="#seccion5">Elementos Multimedia</a></li>
+            <li><a href="#seccion6">Tablas</a></li>
+            <li><a href="#seccion7">Formulario</a></li>
+            <li><a href="#seccion8">Semántica</a></li>
+        
+        
+        </ol>
+<!--  enlaces a otras paginas -->
+            <h4>Enlaces externos: </h4>
+            <ul> 
+                <p> pudes aprender HTML </p>
+                <p><a href="https://www.freecodecamp.org/espanol/news/aprende-html-y-css-curso-desde-cero/" target="_blank">aqui</a> si te interesa leer.</p>
+                <p> o también <a href="https://youtube.com/playlist?list=PLRFOqDrY-6ns2FQdjmqx3ShGLRLj9ESPE&si=kEdqQG_FaQX3hOjr" target="_blank">aqui</a>  si te interesa ver.</p>
+            </ul>
+        
+        
+        <h4> Lista Ordenada: </h4>
+        <ol>
+            <li>Primer elemento de la lista ordenada</li>
+            <li>Segundo elemento de la lista ordenada</li>
+        </ol>
+        
+        <h4> Lista Desordenada: </h4>
+        <ul>
+            <li>Primer elemento de la lista desordenada</li>
+            <li>Segundo elemento de la lista desordenada</li>
+        </ul>
+    </article>
+    </section>
+    </div>
+
+    <div id="seccion5"> 
+        <section> 
+            <article>
+                <h2>5. Elementos Multimedia</h2>
+
+<!-- se introduce una imagen -->
+<div>
+    <section> 
+    <h4> Imagen </h4>
+    <p> un perrito </p>
+    <img src="imagen1.jpg" 
+    width="200px"  
+    alt=" es una imagen de un perrito" >
+</div>
+
+<!-- se introduce un video -->
+<div>
+    <section> 
+    <h4> Video</h4>
+    <p> otro perrito </p>
+    <video
+    src="video1.mp4"
+    controls width="300px"
+    height="300px">
+</div>
+<!-- se introduce un audio mp3 -->
+<div> 
+    <section>
+        <h4> Audio </h4>
+        <p> Rosas - La Oreja de Van Gogh </p>
+        <audio controls  alt="Rosas - La Oreja de Van Gogh "
+<source src="audio1.mp3" type="audio/mpeg" > 
+</div> 
+
+<!-- creación de tablas -->
+<div id="seccion6"> 
+</section> 
+    <h2>6. tablas</h2>
+<style> 
+table{ 
+    width: 100%;
+    border-collapse: collapse;
+
+}
+th,td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+tfoot{
+    font-weight: bold;
+    background-color: gray;
+    fount
+    
+}
+</style>
+
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Fila 1, celda 1</td>
+            <td>Fila 2, celda 2</td>
+            <td>Fila 3, celda 3</td>
+        </tr>
+        <tr>
+            <td>Fila 2, celda 1</td>
+            <td>Fila 2, celda 2</td>
+            <td>Fila 2, celda 3</td>
+        </tr>
+        <tr>
+            <td>Fila 3, celda 1</td>
+            <td>Fila 3, celda 2</td>
+            <td>Fila 3, celda 3</td>
+        </tr>
+
+    </tbody>
+
+
+    <tfoot>
+        <tr>
+            <td>total 1</td>
+            <td>total 2</td>
+            <td>total 3</td>
+        </tr>
+
+    </tfoot>
+</table>
+</div>
+</div>
+
+
+<!-- creación de formularios -->
+<div id="seccion7"> 
+<section> 
+        <h2>7. Formularios</h2>
+        <form>
+            <div>
+                <label>Email</label>
+            <input type="email" placeholder="example@example.com">
+            </div>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre"/>
+            </div>
+            <div>
+                <label>Apellido</label>
+                <input type="text" placeholder="Ingrese su apellido"/>
+            </div>
+            <div> 
+                <label>Edad</label>
+            <input type="number" placeholder="Ingrese su Edad"/>
+            </div>
+            <div>
+            <button type="submit">Enviar formulario</button>
+            
+            
+        </form>
+        </section>
+    </div>
+
+
+    <div id="seccion8">
+    </section>
+          <h2>8. Semántica</h2>
+          <aside>
+            <h3>Información Adicional</h3>
+            <p>Este es un ejemplo de contenido complementario que está relacionado con el contenido principal pero no es esencial para su comprensión.</p>
+            <nav>
+<!-- se utiliza un nav para acceder a las distintas secciones  -->
+              <h4>Enlaces Relacionados</h4>
+              <ul>
+                <li><a href="#seccion1">Inicio</a></li>
+                <li><a href="#seccion2">Encabezados</a></li>
+                <li><a href="#seccion3">Divisiones y Agrupación</a></li>
+                <li><a href="#seccion4">Enlaces y Listas</a></li>
+                <li><a href="#seccion5">Elementos Multimedia</a></li>
+                <li><a href="#seccion6">Tablas</a></li>
+                <li><a href="#seccion7">Formulario</a></li>
+                <li><a href="#seccion8">Semántica</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </section>
+      </div>
+
+<!-- pie de pagina -->
+<footer>
+  <p> Bianca Palazzo Marquez   -   50122    -   3k9</p>
+
+</footer>
+  
+</div>
+
+</body>
+</html>
+
